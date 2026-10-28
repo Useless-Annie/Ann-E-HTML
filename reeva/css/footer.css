@@ -1,0 +1,9 @@
+/* ==================== SECTION: FOOTER ==================== */
+footer{padding:3rem 0 2rem;border-top:1px solid var(--line)}
+.footer-row{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:center}
+.footer-row .logo img{height:60px}
+.footer-links{display:flex;flex-wrap:wrap;gap:1.2rem}
+.footer-links a{font-weight:600;color:var(--primary-color);font-size:.95rem}
+.footer-links a:hover{color:var(--secondary-color)}
+.footer-copy{margin-top:1.8rem;color:var(--muted);font-size:.88rem}
+/* ==================== END SECTION: FOOTER ==================== */

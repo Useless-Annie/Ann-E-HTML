@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>REEVA — Marketplace</title>
+<meta name="description" content="REEVA connects people, local talent and sustainable fashion to give every garment a second life.">
+<link rel="icon" href="../img/reeva-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/marketplace.css">
+<link rel="stylesheet" href="../css/contact.css">
+<link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body data-page="marketplace" data-root="../">
+
+<!-- NAVBAR (component) -->
+<div data-component="navbar"></div>
+
+<main>
+
+<section class="marketplace">
+  <div class="container">
+    <div class="reveal">
+      <h2 class="title">Marketplace</h2>
+      <p class="sub">Every piece is one of a kind and comes with the story of who made it.</p>
+    </div>
+    <div class="products">
+      <!-- REPLACE: img/prod1.jpg … prod4.jpg, names and prices -->
+      <article class="prod reveal"><figure class="ph" data-label="IMG · prod1.jpg"><img src="../img/prod1.jpg" alt="Star Print Sweater" onerror="this.remove()"></figure><h3>Star Print Sweater</h3><p class="prod-by">Upcycled · Designer name</p><div class="prod-row"><span class="price">$35</span><button class="add" data-name="Star Print Sweater" data-price="35">Add to cart</button></div></article>
+      <article class="prod reveal d1"><figure class="ph" data-label="IMG · prod2.jpg"><img src="../img/prod2.jpg" alt="Black Jacket" onerror="this.remove()"></figure><h3>Black Jacket</h3><p class="prod-by">Upcycled · Designer name</p><div class="prod-row"><span class="price">$60</span><button class="add" data-name="Black Jacket" data-price="60">Add to cart</button></div></article>
+      <article class="prod reveal d2"><figure class="ph" data-label="IMG · prod3.jpg"><img src="../img/prod3.jpg" alt="White Oversize" onerror="this.remove()"></figure><h3>White Oversize</h3><p class="prod-by">Upcycled · Designer name</p><div class="prod-row"><span class="price">$28</span><button class="add" data-name="White Oversize" data-price="28">Add to cart</button></div></article>
+      <article class="prod reveal d3"><figure class="ph" data-label="IMG · prod4.jpg"><img src="../img/prod4.jpg" alt="Lucky Hoodie" onerror="this.remove()"></figure><h3>Lucky Hoodie</h3><p class="prod-by">Upcycled · Designer name</p><div class="prod-row"><span class="price">$45</span><button class="add" data-name="Lucky Hoodie" data-price="45">Add to cart</button></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION (component, shared by every page) -->
+<div data-component="contact-section"></div>
+</main>
+
+<!-- FOOTER (component) -->
+<div data-component="footer"></div>
+
+<!-- CART DRAWER (component) -->
+<div data-component="cart-drawer"></div>
+
+<!-- TOAST (component) -->
+<div data-component="toast"></div>
+
+<script defer src="../js/components.js"></script>
+<script defer src="../js/router.js"></script>
+<script defer src="../js/navbar.js"></script>
+<script defer src="../js/animations.js"></script>
+<script defer src="../js/cart.js"></script>
+<script defer src="../js/marketplace.js"></script>
+<script defer src="../js/contact.js"></script>
+</body>
+</html>

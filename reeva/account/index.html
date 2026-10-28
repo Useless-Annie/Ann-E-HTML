@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>REEVA — My Account</title>
+<meta name="description" content="REEVA connects people, local talent and sustainable fashion to give every garment a second life.">
+<link rel="icon" href="../img/reeva-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/account.css">
+<link rel="stylesheet" href="../css/contact.css">
+<link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body data-page="account" data-root="../">
+
+<!-- NAVBAR (component) -->
+<div data-component="navbar"></div>
+
+<main>
+
+<section class="my-account">
+  <div class="container auth">
+    <div class="auth-side">
+      <h2>Join the loop.</h2>
+      <p>Log in to complete your purchases, track your donations and save your favorite pieces.</p>
+    </div>
+    <div class="auth-card">
+      <div id="authGuest">
+        <div class="tabs">
+          <button type="button" class="tab on" data-tab="in">Log in</button>
+          <button type="button" class="tab" data-tab="up">Create account</button>
+        </div>
+        <form id="loginForm" novalidate>
+          <input type="email" name="email" placeholder="Email address" autocomplete="email" aria-label="Email">
+          <input type="password" name="password" placeholder="Password" autocomplete="current-password" aria-label="Password">
+          <button class="btn btn-red btn-center" type="submit">Log in</button>
+        </form>
+        <form id="signupForm" novalidate hidden>
+          <input type="text" name="name" placeholder="Your name" autocomplete="name" aria-label="Name">
+          <input type="email" name="email" placeholder="Email address" autocomplete="email" aria-label="Email">
+          <input type="password" name="password" placeholder="Password (at least 6 characters)" autocomplete="new-password" aria-label="Password">
+          <button class="btn btn-red btn-center" type="submit">Create account</button>
+        </form>
+        <p class="auth-message" id="authMessage" role="status"></p>
+      </div>
+      <div class="auth-user" id="authUser" hidden>
+        <h3>Hello, <span id="userName"></span></h3>
+        <p id="userEmail"></p>
+        <a class="btn btn-red btn-center" href="../marketplace/index.html">Go to Marketplace</a>
+        <button type="button" class="btn btn-outline btn-center" id="logoutButton">Log out</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION (component, shared by every page) -->
+<div data-component="contact-section"></div>
+</main>
+
+<!-- FOOTER (component) -->
+<div data-component="footer"></div>
+
+<!-- CART DRAWER (component) -->
+<div data-component="cart-drawer"></div>
+
+<!-- TOAST (component) -->
+<div data-component="toast"></div>
+
+<script defer src="../js/components.js"></script>
+<script defer src="../js/router.js"></script>
+<script defer src="../js/navbar.js"></script>
+<script defer src="../js/animations.js"></script>
+<script defer src="../js/cart.js"></script>
+<script defer src="../js/auth.js"></script>
+<script defer src="../js/contact.js"></script>
+</body>
+</html>

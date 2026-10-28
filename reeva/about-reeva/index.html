@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>REEVA — About REEVA</title>
+<meta name="description" content="REEVA connects people, local talent and sustainable fashion to give every garment a second life.">
+<link rel="icon" href="../img/reeva-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/about-reeva.css">
+<link rel="stylesheet" href="../css/contact.css">
+<link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body data-page="about-reeva" data-root="../">
+
+<!-- NAVBAR (component) -->
+<div data-component="navbar"></div>
+
+<main>
+
+<!-- ==================== SECTION: MISSION ==================== -->
+<section class="mission">
+  <div class="container mission-grid">
+    <div class="reveal">
+      <h2 class="title">Our Mission</h2>
+      <p>We connect people, emerging designers and sustainable fashion to give every garment a second life. We believe fashion can be circular, local and full of stories.</p>
+      <a class="btn btn-light" href="#contact">Join the mission</a>
+    </div>
+    <!-- REPLACE: img/mission.avif -->
+    <figure class="ph mission-image reveal d2" data-label="MISSION IMAGE · img/mission.avif"><img src="../img/mission.avif" alt="Our mission" onerror="this.remove()"></figure>
+  </div>
+</section>
+<!-- ==================== END SECTION: MISSION ==================== -->
+
+<!-- ==================== SECTION: ALLIES ==================== -->
+<section class="allies">
+  <div class="container">
+    <div class="center reveal">
+      <h2 class="title">Our Allies</h2>
+      <p class="sub">We drive sustainable innovation alongside leading institutions in education and environmental conservation.</p>
+    </div>
+    <div class="allies-grid">
+      <!-- REPLACE: img/ally1.avif … ally4 and the logos (ally1-logo.avif, ally2-logo.avif) -->
+      <article class="ally reveal">
+        <div class="ally-media">
+          <figure class="ph" data-label="INADEH · ally1.avif"><img src="../img/ally1.avif" alt="INADEH building" onerror="this.remove()"></figure>
+          <img class="ally-logo" src="../img/ally1-logo.avif" alt="INADEH logo" onerror="this.remove()">
+        </div>
+        <h3>INADEH</h3><p>Technical and professional training for young talent in the fashion sector.</p>
+      </article>
+      <article class="ally reveal d1">
+        <div class="ally-media">
+          <figure class="ph" data-label="UNIVERSITY · ally2.avif"><img src="../img/ally2.avif" alt="Universidad de Panamá campus" onerror="this.remove()"></figure>
+          <img class="ally-logo" src="../img/ally2-logo.avif" alt="Universidad de Panamá logo" onerror="this.remove()">
+        </div>
+        <h3>Universidad de Panamá</h3><p>Academic excellence and innovation with a social commitment.</p>
+      </article>
+      <article class="ally reveal d2">
+        <div class="ally-media">
+          <figure class="ph" data-label="COMMUNITY · ally3.jpg"><img src="../img/ally3.jpg" alt="Community centers" onerror="this.remove()"></figure>
+        </div>
+        <h3>Community Centers</h3><p>Local allies committed to the circular economy and textile reuse.</p>
+      </article>
+      <article class="ally reveal d3">
+        <div class="ally-media">
+          <figure class="ph" data-label="ENVIRONMENTAL · ally4.jpg"><img src="../img/ally4.jpg" alt="Environmental organizations" onerror="this.remove()"></figure>
+        </div>
+        <h3>Environmental Organizations</h3><p>Environmental conservation and textile waste reduction.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ==================== END SECTION: ALLIES ==================== -->
+
+<!-- CONTACT SECTION (component, shared by every page) -->
+<div data-component="contact-section"></div>
+</main>
+
+<!-- FOOTER (component) -->
+<div data-component="footer"></div>
+
+<!-- CART DRAWER (component) -->
+<div data-component="cart-drawer"></div>
+
+<!-- TOAST (component) -->
+<div data-component="toast"></div>
+
+<script defer src="../js/components.js"></script>
+<script defer src="../js/router.js"></script>
+<script defer src="../js/navbar.js"></script>
+<script defer src="../js/animations.js"></script>
+<script defer src="../js/cart.js"></script>
+<script defer src="../js/contact.js"></script>
+</body>
+</html>

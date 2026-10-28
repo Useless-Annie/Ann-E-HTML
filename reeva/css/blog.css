@@ -1,0 +1,13 @@
+/* ==================== SECTION: BLOG ==================== */
+.blogs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2.5rem}
+.post{background:var(--card-color);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .4s}
+.post:hover{transform:translateY(-6px)}
+.post .ph{border-radius:0;min-height:0;aspect-ratio:16/10}
+.post-body{padding:1.4rem}
+.post h3{color:var(--secondary-color);font-size:1.3rem;margin-bottom:.4rem}
+.post p{color:var(--muted);font-size:.92rem}
+
+@media(max-width:1000px){
+  .blogs{grid-template-columns:1fr}
+}
+/* ==================== END SECTION: BLOG ==================== */

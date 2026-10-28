@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>REEVA — Collection Centers</title>
+<meta name="description" content="REEVA connects people, local talent and sustainable fashion to give every garment a second life.">
+<link rel="icon" href="../img/reeva-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Leaflet (interactive map library) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/collection-centers.css">
+<link rel="stylesheet" href="../css/contact.css">
+<link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body data-page="collection-centers" data-root="../">
+
+<!-- NAVBAR (component) -->
+<div data-component="navbar"></div>
+
+<main>
+
+<section class="collection-centers">
+  <div class="container">
+    <!-- REPLACE: img/collection-banner.avif -->
+    <figure class="ph collection-banner reveal" data-label="BANNER · img/collection-banner.avif"><img src="../img/collection-banner.avif" alt="Woman thinking in front of a red background" onerror="this.remove()"></figure>
+    <div class="reveal">
+      <h2 class="title">Collection Centers</h2>
+      <p class="sub">Drop off your clothes at the point nearest to you.</p>
+    </div>
+    <!-- Interactive map of Panama (Leaflet). Edit the centers in the CENTERS array in /js/collection-centers.js -->
+    <div class="collection-map reveal" id="collectionMap" data-label="Loading map of Panama… (internet connection required)"></div>
+    <div class="centers" id="centersList"></div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION (component, shared by every page) -->
+<div data-component="contact-section"></div>
+</main>
+
+<!-- FOOTER (component) -->
+<div data-component="footer"></div>
+
+<!-- CART DRAWER (component) -->
+<div data-component="cart-drawer"></div>
+
+<!-- TOAST (component) -->
+<div data-component="toast"></div>
+
+<script defer src="../js/components.js"></script>
+<script defer src="../js/router.js"></script>
+<script defer src="../js/navbar.js"></script>
+<script defer src="../js/animations.js"></script>
+<script defer src="../js/cart.js"></script>
+<script defer src="../js/collection-centers.js"></script>
+<script defer src="../js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* ==================== SECTION: MARKETPLACE ==================== */
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;margin-top:2.5rem}
+.prod{background:var(--card-color);border-radius:var(--radius);padding:.8rem .8rem 1.3rem;box-shadow:var(--shadow);transition:transform .4s}
+.prod:hover{transform:translateY(-8px)}
+.prod .ph{aspect-ratio:3/4;min-height:0;border-radius:20px}
+.prod h3{font-size:1.1rem;margin:1rem .6rem .1rem}
+.prod-by{margin:0 .6rem;color:var(--muted);font-size:.85rem}
+.prod-row{display:flex;justify-content:space-between;align-items:center;margin:.9rem .6rem 0}
+.price{font-weight:700;font-size:1.15rem;color:var(--primary-color)}
+.add{background:var(--secondary-color);color:#fff;border:0;border-radius:999px;padding:.55rem 1rem;font-weight:600;font-size:.85rem;cursor:pointer;transition:background .3s,transform .3s}
+.add:hover{background:var(--primary-color);transform:scale(1.05)}
+
+@media(max-width:1000px){
+  .products{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .products{grid-template-columns:1fr}
+}
+/* ==================== END SECTION: MARKETPLACE ==================== */

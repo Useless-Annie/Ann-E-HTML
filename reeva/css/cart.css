@@ -1,0 +1,13 @@
+/* ==================== SECTION: CART DRAWER ==================== */
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(400px,100%);background:var(--card-color);z-index:100;transform:translateX(105%);transition:transform .45s cubic-bezier(.2,.7,.2,1);box-shadow:-20px 0 50px -20px rgba(0,0,0,.4);display:flex;flex-direction:column;padding:1.6rem}
+.drawer.open{transform:none}
+.drawer h3{font-size:1.5rem;color:var(--primary-color);display:flex;justify-content:space-between;align-items:center}
+.drawer h3 button{background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--muted)}
+.cart-items{flex:1;overflow:auto;margin:1.2rem 0;display:grid;gap:.8rem;align-content:start}
+.item{display:flex;justify-content:space-between;align-items:center;background:var(--background-color);padding:.8rem 1rem;border-radius:16px;font-size:.93rem}
+.item button{background:none;border:0;color:var(--primary-color);font-weight:700;cursor:pointer}
+.empty{color:var(--muted);text-align:center;padding:2rem 0}
+.cart-total{display:flex;justify-content:space-between;font-weight:700;font-size:1.15rem;margin-bottom:1rem}
+.veil{position:fixed;inset:0;background:rgba(43,33,24,.5);opacity:0;pointer-events:none;transition:opacity .4s;z-index:90}
+.veil.show{opacity:1;pointer-events:auto}
+/* ==================== END SECTION: CART DRAWER ==================== */
