@@ -1,0 +1,84 @@
+/* ==================== GLOBAL STYLES ==================== */
+
+/* Brand identity: change colors here */
+:root{
+  --primary-color:#DA3D00;     /* REEVA red */
+  --secondary-color:#1F7AA9;   /* REEVA blue */
+  --accent-color:#F2B134;      /* warm accent (optional) */
+  --background-color:#E9DEC4;  /* cream */
+  --text-color:#2B2118;
+  --card-color:#FFFBF1;
+  --muted:#6B5D4B;
+  --line:rgba(43,33,24,.14);
+  --radius:26px;
+  --shadow:0 20px 40px -24px rgba(43,33,24,.5);
+}
+
+/* Reset and base */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--background-color);color:var(--text-color);line-height:1.65;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--secondary-color);outline-offset:3px}
+
+/* Layout and typography */
+.container{width:min(1180px,90%);margin-inline:auto}
+section{padding:clamp(70px,9vw,120px) 0}
+h1,h2,h3{line-height:1.05;letter-spacing:-.03em}
+h2.title{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:var(--secondary-color);margin-bottom:1.2rem}
+.sub{max-width:560px;color:var(--muted);font-size:1.05rem}
+.center{text-align:center}
+.center .sub{margin-inline:auto}
+
+/* Logo (used in navbar and footer) */
+.logo{font-size:2rem;font-weight:800;color:var(--primary-color);letter-spacing:-.04em}
+.logo img{height:48px;width:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.7rem;border-radius:999px;font-weight:600;font-size:.98rem;border:2px solid transparent;cursor:pointer;transition:transform .3s,box-shadow .3s,background .3s,color .3s}
+.btn-center{justify-content:center}
+.btn-red{background:var(--primary-color);color:#fff}
+.btn-red:hover{transform:translateY(-3px);box-shadow:0 14px 26px -10px rgba(218,61,0,.7)}
+.btn-outline{border-color:var(--primary-color);color:var(--primary-color)}
+.btn-outline:hover{background:var(--primary-color);color:#fff;transform:translateY(-3px)}
+.btn-light{background:var(--background-color);color:var(--secondary-color)}
+.btn-light:hover{transform:translateY(-3px);box-shadow:0 14px 26px -10px rgba(0,0,0,.4)}
+
+/* Image placeholders (replace by adding an <img> inside) */
+.ph{position:relative;overflow:hidden;border-radius:var(--radius);background:repeating-linear-gradient(135deg,#d9cba9 0 14px,#e1d4b4 14px 28px);min-height:220px}
+.ph img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}
+.ph::after{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:1rem;font-weight:700;font-size:.8rem;color:var(--muted)}
+
+/* Cards and big numbers */
+.card{background:var(--card-color);border-radius:var(--radius);padding:1.7rem;box-shadow:var(--shadow);transition:transform .4s,box-shadow .4s}
+.card:hover{transform:translateY(-6px)}
+.big{font-weight:800;font-size:clamp(2.2rem,4.2vw,3.4rem);color:var(--primary-color);line-height:1}
+.card small{display:block;margin-top:.6rem;color:var(--muted);font-size:.9rem;line-height:1.4}
+
+/* Form fields (colors are set by each section) */
+input,textarea{width:100%;padding:1rem 1.2rem;border-radius:16px;border:2px solid transparent;font:inherit;transition:border .3s,background .3s}
+textarea{min-height:110px;resize:vertical}
+
+/* Page entrance (each page is now its own HTML file) */
+main{animation:viewIn .6s cubic-bezier(.2,.7,.2,1)}
+@keyframes viewIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* Scroll reveal animation */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}
+.d2{transition-delay:.2s}
+.d3{transition-delay:.3s}
+
+/* Toast */
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--text-color);color:#fff;padding:.8rem 1.4rem;border-radius:999px;font-size:.9rem;transition:transform .4s;z-index:120}
+.toast.show{transform:translate(-50%,0)}
+
+/* Reduced motion */
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+/* ==================== END GLOBAL STYLES ==================== */
